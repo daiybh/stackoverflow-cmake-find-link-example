@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 2.8.12)
 project(mylib)
 
+set(CMAKE_INSTALL_PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/../out/)
 set(CMAKE_DEBUG_POSTFIX d)
 
 add_library(mylib mylib.c include/mylib.h)
